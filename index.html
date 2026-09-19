@@ -1,0 +1,2272 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#08120e]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>Selective Vacations — India, Curated Around You | Specialist Domestic Journeys</title>
+  <meta name="description" content="Selective Vacations creates bespoke private journeys across India led by domestic travel specialist Shailendra (14+ years experience). Handpicked boutique stays, private chauffeurs, and 24/7 support.">
+  <meta name="keywords" content="Selective Vacations, India travel specialist, luxury India tours, Golden Triangle tour, Taj Mahal private journey, Kerala backwaters, Rajasthan palaces, Kashmir holiday, Shailendra travel">
+  
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Selective Vacations — India, Curated Around You">
+  <meta property="og:description" content="Custom private itineraries across India with 14+ years of local expertise and direct 24/7 human care.">
+  <meta property="og:image" content="assets/images/hero_taj_mahal.jpg">
+
+  <!-- Typography: Plus Jakarta Sans (Modern Display) + Cormorant Garamond (Editorial Serif) + Inter (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CINEMATIC LUXURY DESIGN SYSTEM
+       ========================================================================== */
+    :root {
+      /* Palette: Deep Forest Night & Saffron Champagne */
+      --bg-midnight: #08120e;          /* Deep Emerald Obsidian */
+      --bg-surface: #0e1d17;           /* Elevated Dark Card */
+      --bg-surface-elevated: #142820;  /* High Elevation Card */
+      --bg-surface-glass: rgba(14, 29, 23, 0.75);
+      
+      --color-champagne: #e5a96a;      /* Warm Saffron Champagne */
+      --color-champagne-light: #f3cf9f;
+      --color-champagne-glow: rgba(229, 169, 106, 0.35);
+      
+      --color-gold: #d4a359;           /* Royal Heritage Gold */
+      --color-forest-accent: #1e4533;  /* Deep Forest Accent */
+      
+      --color-ink-white: #ffffff;
+      --color-text-muted: rgba(255, 255, 255, 0.75);
+      --color-text-subtle: rgba(255, 255, 255, 0.45);
+      
+      --border-glass: rgba(255, 255, 255, 0.12);
+      --border-glass-hover: rgba(229, 169, 106, 0.45);
+      
+      --color-whatsapp: #25D366;
+      --color-whatsapp-hover: #1FAA52;
+
+      /* Typography Tokens */
+      --font-display: 'Plus Jakarta Sans', sans-serif;
+      --font-editorial: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', sans-serif;
+
+      /* Radius Tokens */
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 9999px;
+
+      /* Transitions */
+      --ease-fluid: cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-main: all 0.3s var(--ease-fluid);
+      --transition-slow: all 0.8s var(--ease-fluid);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-width: 320px;
+      background: var(--bg-midnight);
+      color: var(--color-ink-white);
+      font-family: var(--font-sans);
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      color: var(--color-ink-white);
+    }
+
+    .font-editorial-italic {
+      font-family: var(--font-editorial);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    p {
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-main);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Container Utility */
+    .container-wide {
+      width: 100%;
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .section-pad {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       GLOW & SHEEN DYNAMIC CTAS
+       ========================================================================== */
+    @keyframes ctaGlow {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(229, 169, 106, 0.5), 0 8px 24px rgba(229, 169, 106, 0.25);
+      }
+      50% {
+        box-shadow: 0 0 0 10px rgba(229, 169, 106, 0), 0 8px 32px rgba(229, 169, 106, 0.45);
+      }
+    }
+
+    @keyframes ctaSheen {
+      0% { left: -70%; }
+      45%, 100% { left: 140%; }
+    }
+
+    .btn-sheen {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #f7e2c5 0%, #e5a96a 50%, #c48342 100%);
+      color: #08120e;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 30px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      animation: ctaGlow 3s ease-in-out infinite;
+      transition: var(--transition-main);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn-sheen::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70%;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+      transform: skewX(-20deg);
+      animation: ctaSheen 3.6s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .btn-sheen:hover {
+      background: #fbe6cb;
+      transform: translateY(-2px);
+    }
+    .btn-sheen:active {
+      transform: scale(0.98);
+    }
+
+    .btn-outline-glass {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-glass);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      transition: var(--transition-main);
+    }
+    .btn-outline-glass:hover {
+      background: #FFFFFF;
+      color: #08120e;
+      border-color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .btn-arrow-icon {
+      transition: transform 0.3s ease;
+    }
+    .btn-sheen:hover .btn-arrow-icon,
+    .btn-outline-glass:hover .btn-arrow-icon {
+      transform: translateX(4px);
+    }
+
+    /* Tag Micro Pills */
+    .pill-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-champagne);
+      background: rgba(229, 169, 106, 0.12);
+      border: 1px solid rgba(229, 169, 106, 0.25);
+    }
+
+    /* ==========================================================================
+       SITE HEADER & GLASS NAVBAR
+       ========================================================================== */
+    .site-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 50;
+      padding: 24px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+    }
+    .brand-title span {
+      color: var(--color-champagne);
+    }
+    .brand-caption {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-text-subtle);
+      margin-top: -2px;
+    }
+
+    .nav-links-row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+      transition: var(--transition-main);
+    }
+    .nav-link:hover {
+      color: var(--color-champagne);
+    }
+
+    /* ==========================================================================
+       SECTION 01: HERO CINEMATIC SLIDER & THUMBNAILS QUEUE
+       ========================================================================== */
+    .hero-container {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      padding-bottom: 80px;
+      padding-top: 140px;
+    }
+
+    /* Background Slides */
+    .hero-bg-layer {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      background-size: cover;
+      background-position: center;
+      transition: opacity 1.2s ease-in-out, transform 8s var(--ease-fluid);
+      transform: scale(1.05);
+    }
+    .hero-slide.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Dual Gradient Darkening Masks */
+    .hero-overlay-mask {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(90deg, rgba(8, 18, 14, 0.88) 0%, rgba(8, 18, 14, 0.5) 55%, rgba(8, 18, 14, 0.25) 100%),
+                  linear-gradient(0deg, rgba(8, 18, 14, 0.95) 0%, rgba(8, 18, 14, 0.2) 60%);
+      pointer-events: none;
+    }
+
+    .hero-content-grid {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: flex-end;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .hero-text-block {
+      max-width: 720px;
+    }
+
+    .hero-main-title {
+      font-size: clamp(3.4rem, 6.8vw, 6.2rem);
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: -0.06em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 16px;
+      margin-bottom: 22px;
+    }
+
+    .hero-lead-desc {
+      font-size: clamp(1rem, 1.3vw, 1.18rem);
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    /* Right Side: Interactive Thumbnails Queue & Right-Aligned Controls */
+    .hero-thumbs-queue {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    .thumbs-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 16px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+      max-width: 100%;
+    }
+    .thumbs-row::-webkit-scrollbar { display: none; }
+
+    .thumb-card {
+      position: relative;
+      flex: 0 0 160px;
+      height: 220px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      opacity: 0.6;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: var(--transition-main);
+    }
+    .thumb-card.active {
+      opacity: 1;
+      transform: translateY(-6px);
+      border: 2px solid var(--color-champagne);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+    }
+    .thumb-card:hover {
+      opacity: 0.9;
+    }
+    .thumb-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .thumb-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 12px 10px;
+      background: linear-gradient(0deg, rgba(8, 18, 14, 0.95), transparent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Navigation Arrows & Counter Aligned Strictly to the Right */
+    .thumb-nav-controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+      width: 100%;
+      margin-top: 4px;
+    }
+
+    .slide-page-counter {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--color-champagne);
+    }
+
+    .thumb-nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .thumb-nav-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(14, 29, 23, 0.6);
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 1.1rem;
+      transition: var(--transition-main);
+      cursor: pointer;
+    }
+    .thumb-nav-btn:hover {
+      background: #FFFFFF;
+      color: #08120e;
+      border-color: #FFFFFF;
+      transform: scale(1.06);
+    }
+
+    /* Sleek Floating Pill-Shaped Filter Search Dock */
+    .hero-filter-bar-wrapper {
+      position: relative;
+      z-index: 15;
+      width: 100%;
+    }
+
+    .hero-pill-filter-bar {
+      background: rgba(14, 29, 23, 0.9);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-pill);
+      padding: 8px 10px 8px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+      max-width: 1120px;
+      transition: var(--transition-main);
+    }
+    .hero-pill-filter-bar:hover {
+      border-color: rgba(229, 169, 106, 0.35);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .filter-pill-segment {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 0;
+      padding: 6px 8px;
+    }
+
+    .filter-segment-icon {
+      color: var(--color-champagne);
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
+
+    .filter-segment-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .filter-segment-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-champagne);
+      white-space: nowrap;
+    }
+
+    .filter-segment-select {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .filter-segment-select option {
+      background: #0e1d17;
+      color: #FFFFFF;
+    }
+
+    .filter-segment-divider {
+      width: 1px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.12);
+      flex-shrink: 0;
+    }
+
+    .filter-submit-btn {
+      flex-shrink: 0;
+      background: linear-gradient(135deg, #f7e2c5 0%, #e5a96a 50%, #c48342 100%);
+      color: #08120e;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 15px 30px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition-main);
+      box-shadow: 0 6px 22px rgba(229, 169, 106, 0.35);
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .filter-submit-btn:hover {
+      background: #fbe6cb;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(229, 169, 106, 0.5);
+    }
+    .filter-submit-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* ==========================================================================
+       SECTION 02: PHILOSOPHY & BRAND POSITIONING
+       ========================================================================== */
+    .narrative-section {
+      background: #0a1712;
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .narrative-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .narrative-heading {
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .narrative-quote-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      padding: 48px;
+      position: relative;
+    }
+
+    /* Ambient Orbs */
+    .ambient-glow-orb {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(229, 169, 106, 0.12);
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       SECTION 03: SIGNATURE DESTINATIONS (ATMOSPHERIC BENTO CARDS)
+       ========================================================================== */
+    .destinations-section {
+      background: #08120e;
+    }
+
+    .dest-header-flex {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .dest-bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
+    }
+
+    .dest-card-box {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      min-height: 440px;
+      border: 1px solid var(--border-glass);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 40px;
+      transition: var(--transition-main);
+    }
+    .dest-card-box::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(8, 18, 14, 0.05) 15%, rgba(8, 18, 14, 0.92) 100%);
+      transition: var(--transition-main);
+    }
+    .dest-card-box:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-glass-hover);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+    .dest-card-box:hover::after {
+      background: linear-gradient(180deg, rgba(8, 18, 14, 0.15) 10%, rgba(8, 18, 14, 0.96) 100%);
+    }
+
+    .dest-card-inner {
+      position: relative;
+      z-index: 5;
+    }
+
+    .dest-card-title {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .dest-card-sub {
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      margin-bottom: 24px;
+      max-width: 520px;
+    }
+
+    /* Bento Grid Column Spans */
+    .bento-span-8 { grid-column: span 8; min-height: 480px; }
+    .bento-span-4 { grid-column: span 4; min-height: 480px; }
+    .bento-span-4-short { grid-column: span 4; min-height: 380px; }
+
+    /* ==========================================================================
+       SECTION 04: TRAVEL STYLES
+       ========================================================================== */
+    .styles-section {
+      background: #0b1713;
+      border-top: 1px solid var(--border-glass);
+    }
+
+    .styles-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 56px;
+    }
+
+    .style-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-main);
+    }
+    .style-box:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-glass-hover);
+      background: var(--bg-surface-elevated);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .style-icon-circle {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-md);
+      background: rgba(229, 169, 106, 0.12);
+      border: 1px solid rgba(229, 169, 106, 0.25);
+      color: var(--color-champagne);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+    }
+
+    .style-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    .style-desc {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SECTION 05: CURATED SAMPLE JOURNEYS
+       ========================================================================== */
+    .journeys-section {
+      background: #08120e;
+    }
+
+    .filter-pills-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      margin-bottom: 56px;
+    }
+
+    .filter-pill-btn {
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      border: 1px solid var(--border-glass);
+      background: var(--bg-surface);
+      transition: var(--transition-main);
+      cursor: pointer;
+    }
+    .filter-pill-btn:hover, .filter-pill-btn.active {
+      background: var(--color-champagne);
+      color: #08120e;
+      border-color: var(--color-champagne);
+    }
+
+    .journeys-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 30px;
+    }
+
+    .journey-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-main);
+    }
+    .journey-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-glass-hover);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .journey-image-wrapper {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+    }
+    .journey-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-fluid);
+    }
+    .journey-card:hover .journey-image-wrapper img {
+      transform: scale(1.08);
+    }
+
+    .journey-duration-pill {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(8, 18, 14, 0.88);
+      backdrop-filter: blur(10px);
+      color: #FFFFFF;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-glass);
+    }
+
+    .journey-card-content {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .journey-route {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-champagne);
+      margin-bottom: 8px;
+    }
+
+    .journey-card-title {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .journey-card-desc {
+      font-size: 0.92rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .journey-meta-pills {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-glass);
+      margin-bottom: 24px;
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       SECTION 06: FOUNDER SPOTLIGHT (SHAILENDRA)
+       ========================================================================== */
+    .founder-spotlight-section {
+      background: #0b1713;
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .founder-spotlight-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+    }
+
+    .founder-image-frame {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      height: 420px;
+      border: 1px solid var(--border-glass);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    .founder-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-quote-text {
+      font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.25;
+      margin-bottom: 24px;
+    }
+
+    .founder-bio-text {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+
+    /* ==========================================================================
+       SECTION 07: TRUST PILLARS
+       ========================================================================== */
+    .trust-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 56px;
+    }
+
+    .trust-stat-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 40px 28px;
+      text-align: center;
+      transition: var(--transition-main);
+    }
+    .trust-stat-box:hover {
+      border-color: var(--border-glass-hover);
+      transform: translateY(-4px);
+    }
+
+    .trust-stat-num {
+      font-size: 3.8rem;
+      font-weight: 800;
+      color: var(--color-champagne);
+      line-height: 1;
+      margin-bottom: 12px;
+      letter-spacing: -0.04em;
+    }
+
+    .trust-stat-label {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    .trust-stat-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+    }
+
+    .cert-disclaimer-panel {
+      margin-top: 60px;
+      padding: 28px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-md);
+      border: 1px dashed var(--border-glass);
+      text-align: center;
+    }
+
+    /* ==========================================================================
+       SECTION 08: TRAVELER REVIEWS
+       ========================================================================== */
+    .reviews-section {
+      background: #0b1713;
+      border-top: 1px solid var(--border-glass);
+    }
+
+    .reviews-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-top: 56px;
+    }
+
+    .review-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-lg);
+      padding: 38px;
+      transition: var(--transition-main);
+    }
+    .review-card:hover {
+      border-color: var(--border-glass-hover);
+      transform: translateY(-4px);
+    }
+
+    .review-quote-body {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    /* ==========================================================================
+       SECTION 09: FINAL CTA BANNER
+       ========================================================================== */
+    .final-cta-section {
+      background: linear-gradient(rgba(8, 18, 14, 0.85), rgba(8, 18, 14, 0.95)), url('assets/images/hero_taj_mahal.jpg') center/cover;
+      text-align: center;
+      padding: 130px 0;
+      border-top: 1px solid var(--border-glass);
+    }
+    .final-cta-section h2 {
+      font-size: clamp(2.8rem, 5vw, 4.5rem);
+      margin-bottom: 20px;
+    }
+    .final-cta-section p {
+      font-size: 1.2rem;
+      max-width: 680px;
+      margin: 0 auto 44px auto;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* ==========================================================================
+       SITE FOOTER
+       ========================================================================== */
+    .site-footer {
+      background: #050b08;
+      color: var(--color-text-subtle);
+      padding: 88px 0 44px 0;
+      border-top: 1px solid var(--border-glass);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid-layout {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 56px;
+      margin-bottom: 64px;
+    }
+
+    .footer-col-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .footer-links-list a:hover {
+      color: var(--color-champagne);
+    }
+
+    /* ==========================================================================
+       PERSISTENT FLOATING WHATSAPP & MOBILE DOCK
+       ========================================================================== */
+    .floating-whatsapp-btn {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 990;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--color-whatsapp);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+      transition: var(--transition-main);
+    }
+    .floating-whatsapp-btn:hover {
+      transform: scale(1.1) rotate(5deg);
+      background: var(--color-whatsapp-hover);
+    }
+
+    .mobile-sticky-dock {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: #0e1d17;
+      border-top: 1px solid var(--border-glass);
+      padding: 12px 16px;
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .mobile-dock-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       MODAL & ITINERARY DRAWER OVERLAYS
+       ========================================================================== */
+    .modal-overlay-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 11, 8, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-dialog-card {
+      background: #0e1d17;
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-xl);
+      width: 100%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 48px;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-close-icon {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 1.8rem;
+      color: var(--color-text-subtle);
+      cursor: pointer;
+      line-height: 1;
+      transition: var(--transition-main);
+    }
+    .modal-close-icon:hover {
+      color: #FFFFFF;
+    }
+
+    .form-group-field {
+      margin-bottom: 20px;
+    }
+    .form-field-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 8px;
+    }
+    .form-control-input {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      border: 1px solid var(--border-glass);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.05);
+      color: #FFFFFF;
+      outline: none;
+      transition: var(--transition-main);
+    }
+    .form-control-input:focus {
+      border-color: var(--color-champagne);
+      box-shadow: 0 0 0 3px var(--color-champagne-glow);
+    }
+    .form-control-input option {
+      background: #0e1d17;
+      color: #FFFFFF;
+    }
+
+    .form-2col-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    /* Live Itinerary Slide Drawer */
+    .drawer-overlay-blur {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 11, 8, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 2100;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-main);
+      display: flex;
+      justify-content: flex-end;
+    }
+    .drawer-overlay-blur.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawer-slide-content {
+      background: #0e1d17;
+      border-left: 1px solid var(--border-glass);
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      overflow-y: auto;
+      padding: 48px 40px;
+      position: relative;
+      box-shadow: -15px 0 50px rgba(0, 0, 0, 0.6);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-content-grid { grid-template-columns: 1fr; gap: 40px; margin-bottom: 24px; }
+      .bento-span-8, .bento-span-4, .bento-span-4-short { grid-column: span 12; min-height: 400px; }
+      .narrative-grid { grid-template-columns: 1fr; gap: 40px; }
+      .founder-spotlight-card { grid-template-columns: 1fr; padding: 40px; }
+      .founder-image-frame { height: 340px; }
+      .footer-grid-layout { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .hero-pill-filter-bar { flex-wrap: wrap; border-radius: var(--radius-lg); padding: 16px; }
+      .filter-segment-divider { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links-row { display: none; }
+      .hero-main-title { font-size: 3rem; }
+      .hero-pill-filter-bar { flex-direction: column; align-items: stretch; border-radius: var(--radius-lg); padding: 18px; gap: 14px; }
+      .filter-submit-btn { width: 100%; justify-content: center; }
+      .journeys-cards-grid { grid-template-columns: 1fr; }
+      .form-2col-row { grid-template-columns: 1fr; }
+      .footer-grid-layout { grid-template-columns: 1fr; }
+      .floating-whatsapp-btn { bottom: 84px; right: 20px; width: 52px; height: 52px; font-size: 1.5rem; }
+      .mobile-sticky-dock { display: block; }
+      .modal-dialog-card { padding: 32px 24px; }
+      .drawer-slide-content { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a href="#hero" class="brand-logo-group">
+        <span class="brand-title">SELECTIVE <span>VACATIONS</span></span>
+        <span class="brand-caption">India Travel Specialists</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links-row">
+          <li><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#styles" class="nav-link">Travel Styles</a></li>
+          <li><a href="#journeys" class="nav-link">Curated Journeys</a></li>
+          <li><a href="#why-selective" class="nav-link">Why Choose Us</a></li>
+          <li><a href="#shailendra" class="nav-link">Meet Shailendra</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a href="https://wa.me/?text=Hi%20Shailendra,%20I'd%20like%20to%20plan%20a%20trip%20to%20India." target="_blank" class="btn-outline-glass">
+          <span>WhatsApp</span>
+        </a>
+        <button onclick="openTripModal()" class="btn-sheen">
+          <span>Plan Journey</span>
+          <span class="btn-arrow-icon">&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       SECTION 01: HERO SLIDER & THUMBNAILS QUEUE
+       ========================================================================== -->
+  <section id="hero" class="hero-container">
+    <!-- Cinematic Full-Bleed Background Slides -->
+    <div class="hero-bg-layer">
+      <div class="hero-slide active" style="background-image: url('assets/images/hero_taj_mahal.jpg');" data-index="0"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_kerala.jpg');" data-index="1"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_rajasthan.jpg');" data-index="2"></div>
+      <div class="hero-slide" style="background-image: url('assets/images/hero_kashmir.jpg');" data-index="3"></div>
+    </div>
+
+    <!-- Dual Darkening Gradient Masks -->
+    <div class="hero-overlay-mask"></div>
+
+    <div class="container-wide" style="position: relative; z-index: 10; width: 100%;">
+      <div class="hero-content-grid">
+        <!-- Left Headline Block -->
+        <div class="hero-text-block">
+          <span class="pill-eyebrow" id="hero-eyebrow">
+            <span>&#10024;</span> 14+ Years Domestic India Expertise
+          </span>
+          <h1 class="hero-main-title" id="hero-title-text">
+            INDIA, CURATED AROUND YOU.
+          </h1>
+          <p class="hero-lead-desc" id="hero-desc-text">
+            Discover India through hand-crafted private journeys, boutique luxury stays, private chauffeured transport, and 24/7 direct human care led by founder Shailendra.
+          </p>
+
+          <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap;">
+            <button onclick="openTripModal()" class="btn-sheen">
+              <span>Get A Bespoke Quote</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+            <a href="#destinations" class="btn-outline-glass">
+              <span>Explore Destinations</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Interactive Thumbnails Queue (Inspired by partner site UX) -->
+        <div class="hero-thumbs-queue">
+          <div class="thumbs-row">
+            <div class="thumb-card active" onclick="switchSlide(0)" title="Taj Mahal & Golden Triangle">
+              <img src="assets/images/hero_taj_mahal.jpg" alt="Taj Mahal">
+              <div class="thumb-caption">Taj Mahal & Agra</div>
+            </div>
+            <div class="thumb-card" onclick="switchSlide(1)" title="Kerala Backwaters">
+              <img src="assets/images/hero_kerala.jpg" alt="Kerala Backwaters">
+              <div class="thumb-caption">Kerala Houseboats</div>
+            </div>
+            <div class="thumb-card" onclick="switchSlide(2)" title="Rajasthan Palaces">
+              <img src="assets/images/hero_rajasthan.jpg" alt="Rajasthan">
+              <div class="thumb-caption">Rajasthan Palaces</div>
+            </div>
+            <div class="thumb-card" onclick="switchSlide(3)" title="Kashmir Valleys">
+              <img src="assets/images/hero_kashmir.jpg" alt="Kashmir Valleys">
+              <div class="thumb-caption">Kashmir Valleys</div>
+            </div>
+          </div>
+
+          <div class="thumb-nav-controls">
+            <span class="slide-page-counter">
+              0<span id="slide-num-current">1</span> / 04
+            </span>
+            <div class="thumb-nav-buttons">
+              <button class="thumb-nav-btn" onclick="prevSlide()" aria-label="Previous destination">&larr;</button>
+              <button class="thumb-nav-btn" onclick="nextSlide()" aria-label="Next destination">&rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sleek Floating Pill-Shaped Filter Search Dock -->
+      <div class="hero-filter-bar-wrapper">
+        <form onsubmit="handleHeroSearchSubmit(event)" class="hero-pill-filter-bar">
+          <div class="filter-pill-segment">
+            <div class="filter-segment-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="filter-segment-text">
+              <label class="filter-segment-label" for="hero-search-dest">Where to go?</label>
+              <select id="hero-search-dest" class="filter-segment-select">
+                <option value="Golden Triangle & Taj Mahal">Golden Triangle (Agra, Jaipur)</option>
+                <option value="Kerala Backwaters">Kerala (Backwaters & Spice Hills)</option>
+                <option value="Rajasthan Royal Palaces">Rajasthan (Palaces & Forts)</option>
+                <option value="Kashmir Valleys">Kashmir & Himalayan Valleys</option>
+                <option value="Goa Coastal Escapes">Goa Coastline & Beaches</option>
+                <option value="South India Temples">South India Temple Trails</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-segment-divider"></div>
+
+          <div class="filter-pill-segment">
+            <div class="filter-segment-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="filter-segment-text">
+              <label class="filter-segment-label" for="hero-search-season">Travel Season</label>
+              <select id="hero-search-season" class="filter-segment-select">
+                <option value="Oct - Dec">Oct – Dec (Peak Season)</option>
+                <option value="Jan - Mar">Jan – Mar (Spring)</option>
+                <option value="Apr - Jun">Apr – Jun (Summer Escapes)</option>
+                <option value="Jul - Sep">Jul – Sep (Monsoon Magic)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-segment-divider"></div>
+
+          <div class="filter-pill-segment">
+            <div class="filter-segment-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="filter-segment-text">
+              <label class="filter-segment-label" for="hero-search-party">Travelers</label>
+              <select id="hero-search-party" class="filter-segment-select">
+                <option value="Couple / 2 Travelers">Couple / 2 Travelers</option>
+                <option value="Family (3-5)">Family (3–5)</option>
+                <option value="Group (6+)">Small Group (6+)</option>
+                <option value="Solo Traveler">Solo Traveler</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="filter-submit-btn">
+            <span>Search Journeys</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 02: PHILOSOPHY & BRAND POSITIONING
+       ========================================================================== -->
+  <section class="section-pad narrative-section">
+    <div class="ambient-glow-orb" style="top: 20%; left: 10%;"></div>
+    <div class="container-wide" style="position: relative; z-index: 5;">
+      <div class="narrative-grid">
+        <div>
+          <span class="pill-eyebrow" style="margin-bottom: 20px;">The Selective Philosophy</span>
+          <h2 class="narrative-heading">
+            "India is not a package tour. It is a living journey crafted around your curiosity."
+          </h2>
+        </div>
+        <div class="narrative-quote-box">
+          <p style="font-size: 1.15rem; color: rgba(255,255,255,0.88); line-height: 1.75; margin-bottom: 28px;">
+            We do not sell rigid package templates. At Selective Vacations, we believe your travel should match your pace, your stay preferences, and your personal interests. Tell us how you wish to experience India, and founder Shailendra will design every detail around you.
+          </p>
+          <button onclick="openTripModal()" class="btn-sheen">
+            <span>Start Planning With Shailendra</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 03: SIGNATURE DESTINATIONS (ATMOSPHERIC BENTO GRID)
+       ========================================================================== -->
+  <section id="destinations" class="section-pad destinations-section">
+    <div class="container-wide">
+      <div class="dest-header-flex">
+        <div>
+          <span class="pill-eyebrow" style="margin-bottom: 12px;">Curated Across India</span>
+          <h2 style="font-size: clamp(2.4rem, 4.5vw, 4rem); text-transform: uppercase;">
+            Our Signature Destinations
+          </h2>
+        </div>
+        <p style="max-width: 480px; font-size: 1rem;">
+          Specialized journeys across the Golden Triangle, royal Rajasthan, peaceful Kerala backwaters, and alpine Himalayan valleys.
+        </p>
+      </div>
+
+      <div class="dest-bento-grid">
+        <!-- Golden Triangle & Taj Mahal (Bento 8-col) -->
+        <div class="dest-card-box bento-span-8" style="background-image: url('assets/images/dest_golden_triangle.jpg');">
+          <div class="dest-card-inner">
+            <span class="pill-eyebrow" style="margin-bottom: 12px;">Most Requested Journey</span>
+            <h3 class="dest-card-title">Golden Triangle & Taj Mahal</h3>
+            <p class="dest-card-sub">Delhi, Agra & Jaipur — The legendary circuit of Mughal architectural majesty, pink city fortresses, and sunrise at the Taj Mahal.</p>
+            <button onclick="openTripModal('Golden Triangle & Taj Mahal')" class="btn-sheen">
+              <span>Customize Golden Triangle</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- South India Temple Trails (Bento 4-col) -->
+        <div class="dest-card-box bento-span-4" style="background-image: url('assets/images/dest_south_india.jpg');">
+          <div class="dest-card-inner">
+            <span class="pill-eyebrow" style="margin-bottom: 12px; background: rgba(255,255,255,0.15); color: #fff;">Living Heritage</span>
+            <h3 class="dest-card-title">South India Temples</h3>
+            <p class="dest-card-sub">Tamil Nadu, Madurai & Tanjore — Towering ancient gopurams and living traditions.</p>
+            <button onclick="openTripModal('South India')" class="btn-outline-glass">
+              <span>Explore South India</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Kerala Backwaters (Bento 4-col) -->
+        <div class="dest-card-box bento-span-4-short" style="background-image: url('assets/images/hero_kerala.jpg');">
+          <div class="dest-card-inner">
+            <h3 class="dest-card-title">Kerala Backwaters</h3>
+            <p class="dest-card-sub">Private houseboats & spice hill estates.</p>
+            <button onclick="openTripModal('Kerala')" class="btn-outline-glass">
+              <span>Explore Kerala</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Kashmir Valleys (Bento 4-col) -->
+        <div class="dest-card-box bento-span-4-short" style="background-image: url('assets/images/hero_kashmir.jpg');">
+          <div class="dest-card-inner">
+            <h3 class="dest-card-title">Kashmir Valleys</h3>
+            <p class="dest-card-sub">Dal lake shikaras & alpine snow peaks.</p>
+            <button onclick="openTripModal('Kashmir')" class="btn-outline-glass">
+              <span>Explore Kashmir</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Goa Coastal Escapes (Bento 4-col) -->
+        <div class="dest-card-box bento-span-4-short" style="background-image: url('assets/images/dest_goa.jpg');">
+          <div class="dest-card-inner">
+            <h3 class="dest-card-title">Goa & Beaches</h3>
+            <p class="dest-card-sub">Golden sands & Portuguese architecture.</p>
+            <button onclick="openTripModal('Goa')" class="btn-outline-glass">
+              <span>Explore Goa</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 04: TRAVEL STYLES
+       ========================================================================== -->
+  <section id="styles" class="section-pad styles-section">
+    <div class="container-wide">
+      <div class="text-center" style="max-width: 680px; margin: 0 auto;">
+        <span class="pill-eyebrow" style="margin-bottom: 14px;">Travel Your Way</span>
+        <h2 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); text-transform: uppercase;">
+          Curated Travel Experiences
+        </h2>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          Whether seeking royal palace stays, family bonding, wild Bengal tiger safaris, or holistic Ayurveda wellness.
+        </p>
+      </div>
+
+      <div class="styles-cards-grid">
+        <div class="style-box">
+          <div>
+            <div class="style-icon-circle">&#128081;</div>
+            <h3 class="style-title">Luxury Palaces</h3>
+            <p class="style-desc">Heritage palace suites, private chauffeured luxury cars, and exclusive royal dining.</p>
+          </div>
+          <button onclick="openTripModal('Luxury Palaces')" class="btn-outline-glass" style="margin-top: 24px; width: 100%; justify-content: space-between;">
+            <span>Explore Luxury</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="style-box">
+          <div>
+            <div class="style-icon-circle">&#128106;</div>
+            <h3 class="style-title">Family Journeys</h3>
+            <p class="style-desc">Paced itineraries built for safety, comfort, and engaging experiences across all generations.</p>
+          </div>
+          <button onclick="openTripModal('Family Journeys')" class="btn-outline-glass" style="margin-top: 24px; width: 100%; justify-content: space-between;">
+            <span>Explore Family</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="style-box">
+          <div>
+            <div class="style-icon-circle">&#128149;</div>
+            <h3 class="style-title">Honeymoon & Romance</h3>
+            <p class="style-desc">Candlelight houseboat dinners, royal lake suites in Udaipur, and intimate retreats.</p>
+          </div>
+          <button onclick="openTripModal('Honeymoon')" class="btn-outline-glass" style="margin-top: 24px; width: 100%; justify-content: space-between;">
+            <span>Explore Romance</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="style-box">
+          <div>
+            <div class="style-icon-circle">&#128053;</div>
+            <h3 class="style-title">Wildlife Safaris</h3>
+            <p class="style-desc">Open-top 4x4 jeep safaris tracking wild Royal Bengal tigers in Ranthambore & Kanha.</p>
+          </div>
+          <button onclick="openTripModal('Wildlife')" class="btn-outline-glass" style="margin-top: 24px; width: 100%; justify-content: space-between;">
+            <span>Explore Safaris</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 05: CURATED SAMPLE JOURNEYS
+       ========================================================================== -->
+  <section id="journeys" class="section-pad journeys-section">
+    <div class="container-wide">
+      <div class="text-center" style="max-width: 680px; margin: 0 auto;">
+        <span class="pill-eyebrow" style="margin-bottom: 14px;">Bespoke Samples</span>
+        <h2 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); text-transform: uppercase;">
+          Featured Sample Itineraries
+        </h2>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          Every itinerary can be 100% customized around your travel dates, stay preferences, and budget.
+        </p>
+      </div>
+
+      <div class="filter-pills-row">
+        <button class="filter-pill-btn active" onclick="filterJourneysTab('all', this)">All Sample Trips</button>
+        <button class="filter-pill-btn" onclick="filterJourneysTab('north', this)">North India</button>
+        <button class="filter-pill-btn" onclick="filterJourneysTab('south', this)">South India</button>
+        <button class="filter-pill-btn" onclick="filterJourneysTab('luxury', this)">Luxury & Palaces</button>
+      </div>
+
+      <div class="journeys-cards-grid">
+        <!-- Sample Journey 1 -->
+        <div class="journey-card" data-category="north luxury">
+          <div class="journey-image-wrapper">
+            <img src="assets/images/dest_golden_triangle.jpg" alt="Golden Triangle Classic">
+            <span class="journey-duration-pill">Private Tour · 6 Nights</span>
+          </div>
+          <div class="journey-card-content">
+            <div class="journey-route">Delhi &rarr; Agra &rarr; Jaipur &rarr; Delhi</div>
+            <h3 class="journey-card-title">Golden Triangle Classic</h3>
+            <p class="journey-card-desc">Sunrise at Taj Mahal, Jaipur's Amber Fort, and heritage Rickshaw rides in Old Delhi.</p>
+            <div class="journey-meta-pills">
+              <span>&#128197; 7 Days / 6 Nights</span>
+              <span>&#128663; Private AC Vehicle</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <button onclick="openTripModal('Golden Triangle Classic')" class="btn-sheen" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Customize</span>
+              </button>
+              <button onclick="openItineraryDrawer('golden-triangle')" class="btn-outline-glass" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Details &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Journey 2 -->
+        <div class="journey-card" data-category="south">
+          <div class="journey-image-wrapper">
+            <img src="assets/images/hero_kerala.jpg" alt="Kerala Backwaters & Tea Gardens">
+            <span class="journey-duration-pill">Private Tour · 7 Nights</span>
+          </div>
+          <div class="journey-card-content">
+            <div class="journey-route">Munnar &rarr; Thekkady &rarr; Alleppey &rarr; Kovalam</div>
+            <h3 class="journey-card-title">Kerala Backwaters & Tea Hills</h3>
+            <p class="journey-card-desc">Misty tea estates in Munnar, spice sanctuaries, and a private luxury houseboat stay in Alleppey.</p>
+            <div class="journey-meta-pills">
+              <span>&#128197; 8 Days / 7 Nights</span>
+              <span>&#128675; Private Houseboat</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <button onclick="openTripModal('Kerala Backwaters')" class="btn-sheen" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Customize</span>
+              </button>
+              <button onclick="openItineraryDrawer('kerala-backwaters')" class="btn-outline-glass" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Details &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Journey 3 -->
+        <div class="journey-card" data-category="north luxury">
+          <div class="journey-image-wrapper">
+            <img src="assets/images/hero_taj_mahal.jpg" alt="Golden Triangle & Ganges">
+            <span class="journey-duration-pill">Heritage Circuit · 9 Nights</span>
+          </div>
+          <div class="journey-card-content">
+            <div class="journey-route">Delhi &rarr; Jaipur &rarr; Agra &rarr; Varanasi</div>
+            <h3 class="journey-card-title">Golden Triangle & Sacred Ganges</h3>
+            <p class="journey-card-desc">Golden monuments paired with spiritual Ganga Aarti ceremonies on the ancient river ghats of Varanasi.</p>
+            <div class="journey-meta-pills">
+              <span>&#128197; 10 Days / 9 Nights</span>
+              <span>&#128694; Guided Heritage</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <button onclick="openTripModal('Golden Triangle & Ganges')" class="btn-sheen" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Customize</span>
+              </button>
+              <button onclick="openItineraryDrawer('ganges-heritage')" class="btn-outline-glass" style="padding: 10px 14px; font-size: 0.78rem;">
+                <span>Details &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 06: FOUNDER SPOTLIGHT (SHAILENDRA)
+       ========================================================================== -->
+  <section id="shailendra" class="section-pad founder-spotlight-section">
+    <div class="container-wide">
+      <div class="founder-spotlight-card">
+        <div class="founder-image-frame">
+          <img src="assets/images/shailendra.jpg" alt="Founder Shailendra">
+        </div>
+        <div>
+          <span class="pill-eyebrow" style="margin-bottom: 16px;">Founder & Travel Specialist</span>
+          <h2 class="founder-quote-text">
+            "With more than 14 years of hands-on experience, I personally ensure your itinerary is crafted with care and executed flawlessly."
+          </h2>
+          <p class="founder-bio-text">
+            "Whether you are planning a family holiday, a luxury honeymoon, or a heritage pilgrimage, Selective Vacations is built on direct human accountability and trusted local networks across India."
+          </p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="https://wa.me/?text=Hi%20Shailendra,%20I'd%20like%20to%20consult%20you%20about%20a%20trip%20to%20India." target="_blank" class="btn-sheen" style="background: var(--color-whatsapp); color: #fff;">
+              <span>Talk to Shailendra</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </a>
+            <button onclick="openTripModal('Consult Founder Shailendra')" class="btn-outline-glass">
+              <span>Request Call Back</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 07: TRUST PILLARS
+       ========================================================================== -->
+  <section id="why-selective" class="section-pad">
+    <div class="container-wide">
+      <div class="text-center" style="max-width: 680px; margin: 0 auto;">
+        <span class="pill-eyebrow" style="margin-bottom: 14px;">Trust & Reliability</span>
+        <h2 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); text-transform: uppercase;">
+          Why Travel With Selective Vacations?
+        </h2>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          Combining deep destination knowledge with direct founder accountability.
+        </p>
+      </div>
+
+      <div class="trust-stats-grid">
+        <div class="trust-stat-box">
+          <div class="trust-stat-num">14+</div>
+          <h3 class="trust-stat-label">Years Experience</h3>
+          <p class="trust-stat-desc">Over a decade of specialist domestic India travel curation.</p>
+        </div>
+
+        <div class="trust-stat-box">
+          <div class="trust-stat-num">100%</div>
+          <h3 class="trust-stat-label">Custom Itineraries</h3>
+          <p class="trust-stat-desc">Tailored around your exact comfort level and budget.</p>
+        </div>
+
+        <div class="trust-stat-box">
+          <div class="trust-stat-num">24/7</div>
+          <h3 class="trust-stat-label">On-Ground Support</h3>
+          <p class="trust-stat-desc">Direct local support on phone and WhatsApp during your journey.</p>
+        </div>
+
+        <div class="trust-stat-box">
+          <div class="trust-stat-num">100s</div>
+          <h3 class="trust-stat-label">Happy Families</h3>
+          <p class="trust-stat-desc">Trusted by hundreds of families and couples for memorable vacations.</p>
+        </div>
+      </div>
+
+      <div class="cert-disclaimer-panel">
+        <strong style="font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-champagne); display: block; margin-bottom: 6px;">Certified Tour Operator & Specialists</strong>
+        <p style="font-size: 0.92rem; color: var(--color-text-muted);">[Association Certifications & Affiliation Details — TO BE VERIFIED/PROVIDED]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 08: TRAVELER STORIES
+       ========================================================================== -->
+  <section class="section-pad reviews-section">
+    <div class="container-wide">
+      <div class="text-center" style="max-width: 680px; margin: 0 auto;">
+        <span class="pill-eyebrow" style="margin-bottom: 14px;">Traveler Stories</span>
+        <h2 style="font-size: clamp(2.4rem, 4.5vw, 3.8rem); text-transform: uppercase;">
+          Stories From The Road
+        </h2>
+        <p style="margin-top: 14px; font-size: 1.05rem;">
+          Feedback from guests who traveled across India with Selective Vacations.
+        </p>
+      </div>
+
+      <div class="reviews-cards-grid">
+        <div class="review-card">
+          <div style="color: var(--color-champagne); margin-bottom: 16px; font-size: 1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote-body">"Shailendra planned our Golden Triangle and Kerala trip with great care. The private driver was punctual and courteous, and the houseboat in Alleppey was a highlight."</p>
+          <strong style="display: block; font-size: 1rem; color: #fff;">Mary Templeton</strong>
+          <span style="font-size: 0.82rem; color: var(--color-text-subtle);">United Kingdom [TO BE VERIFIED]</span>
+        </div>
+
+        <div class="review-card">
+          <div style="color: var(--color-champagne); margin-bottom: 16px; font-size: 1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote-body">"As a family traveling with children, having 24/7 support gave us complete peace of mind. Shailendra was always one phone call away. Highly recommended."</p>
+          <strong style="display: block; font-size: 1rem; color: #fff;">John Peterson</strong>
+          <span style="font-size: 0.82rem; color: var(--color-text-subtle);">United States [TO BE VERIFIED]</span>
+        </div>
+
+        <div class="review-card">
+          <div style="color: var(--color-champagne); margin-bottom: 16px; font-size: 1.1rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote-body">"Our honeymoon in Rajasthan felt like a royal holiday. The palace hotels recommended by Shailendra were wonderful. Everything was managed with care."</p>
+          <strong style="display: block; font-size: 1rem; color: #fff;">Lisa Blackwood</strong>
+          <span style="font-size: 0.82rem; color: var(--color-text-subtle);">Canada [TO BE VERIFIED]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 09: FINAL CTA BANNER
+       ========================================================================== -->
+  <section class="final-cta-section">
+    <div class="container-wide">
+      <h2>YOUR INDIA JOURNEY STARTS HERE.</h2>
+      <p>Tell us where you want to go, how you want to travel, and what experiences you dream of. We will handle every detail.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <button onclick="openTripModal()" class="btn-sheen" style="padding: 16px 36px; font-size: 0.95rem;">
+          <span>Plan My India Journey</span>
+          <span class="btn-arrow-icon">&rarr;</span>
+        </button>
+        <a href="https://wa.me/?text=Hi%20Shailendra,%20I'd%20like%20to%20plan%20a%20trip." target="_blank" class="btn-sheen" style="background: var(--color-whatsapp); color: #fff; padding: 16px 36px; font-size: 0.95rem;">
+          <span>WhatsApp Shailendra</span>
+          <span class="btn-arrow-icon">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-grid-layout">
+        <div>
+          <a href="#hero" class="brand-logo-group" style="margin-bottom: 18px;">
+            <span class="brand-title">SELECTIVE <span>VACATIONS</span></span>
+            <span class="brand-caption" style="color: var(--color-champagne);">India Travel Specialists</span>
+          </a>
+          <p style="margin-top: 14px; line-height: 1.7; max-width: 340px; color: var(--color-text-muted);">Specialists in personalized India domestic travel. 14+ years of creating custom private itineraries with handpicked stays and 24/7 on-ground care.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Top Destinations</div>
+          <ul class="footer-links-list">
+            <li><a href="#destinations">Golden Triangle & Taj Mahal</a></li>
+            <li><a href="#destinations">Rajasthan Royal Palaces</a></li>
+            <li><a href="#destinations">Kerala Backwaters</a></li>
+            <li><a href="#destinations">Kashmir Valleys</a></li>
+            <li><a href="#destinations">Goa Coastal Escapes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Travel Styles</div>
+          <ul class="footer-links-list">
+            <li><a href="#styles">Luxury Palace Stays</a></li>
+            <li><a href="#styles">Family Vacations</a></li>
+            <li><a href="#styles">Honeymoon & Romance</a></li>
+            <li><a href="#styles">Wildlife Safaris</a></li>
+            <li><a href="#styles">Ayurveda & Wellness</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact & Support</div>
+          <ul class="footer-links-list">
+            <li><strong>Founder:</strong> Shailendra</li>
+            <li><strong>Office:</strong> [TO BE PROVIDED]</li>
+            <li><strong>Phone:</strong> [TO BE PROVIDED]</li>
+            <li><strong>Email:</strong> [TO BE PROVIDED]</li>
+            <li><strong>WhatsApp:</strong> Direct Founder Access</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="padding-top: 32px; border-top: 1px solid var(--border-glass); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; font-size: 0.8rem;">
+        <div>&copy; 2026 Selective Vacations. All rights reserved. Designed with Heritage & Modernity.</div>
+        <div>Verified Business Information marked [TO BE PROVIDED/VERIFIED].</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PERSISTENT FLOATING WHATSAPP & MOBILE STICKY DOCK
+       ========================================================================== -->
+  <a href="https://wa.me/?text=Hi%20Shailendra,%20I'd%20like%20to%20plan%20a%20trip%20to%20India." target="_blank" class="floating-whatsapp-btn" title="WhatsApp Founder Shailendra">
+    <svg width="34" height="34" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <div class="mobile-sticky-dock">
+    <div class="mobile-dock-grid">
+      <a href="https://wa.me/?text=Hi%20Shailendra,%20I'd%20like%20to%20plan%20a%20trip." target="_blank" class="btn-outline-glass" style="padding: 10px; font-size: 0.78rem; justify-content: center;">WhatsApp</a>
+      <a href="tel:+910000000000" class="btn-outline-glass" style="padding: 10px; font-size: 0.78rem; justify-content: center;">Call Us</a>
+      <button onclick="openTripModal()" class="btn-sheen" style="padding: 10px; font-size: 0.78rem; justify-content: center;">Plan Trip</button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PLAN MY TRIP MODAL
+       ========================================================================== -->
+  <div id="trip-modal" class="modal-overlay-backdrop">
+    <div class="modal-dialog-card">
+      <span class="modal-close-icon" onclick="closeTripModal()">&times;</span>
+      
+      <div style="margin-bottom: 24px;">
+        <span class="pill-eyebrow">Bespoke Curation</span>
+        <h2 style="font-size: 2rem; margin-top: 8px;">Tell us how you want to experience India</h2>
+        <p style="font-size: 0.92rem; color: var(--color-text-muted);">Share your preferences and founder Shailendra will design a personalized itinerary around you.</p>
+      </div>
+
+      <form onsubmit="handleTripModalSubmit(event)">
+        <div class="form-2col-row">
+          <div class="form-group-field">
+            <label class="form-field-label">Your Name *</label>
+            <input type="text" id="modal-name" required placeholder="e.g. Sarah Jenkins" class="form-control-input">
+          </div>
+          <div class="form-group-field">
+            <label class="form-field-label">Email Address *</label>
+            <input type="email" id="modal-email" required placeholder="sarah@example.com" class="form-control-input">
+          </div>
+        </div>
+
+        <div class="form-2col-row">
+          <div class="form-group-field">
+            <label class="form-field-label">WhatsApp / Phone *</label>
+            <input type="tel" id="modal-phone" required placeholder="+1 555-0192" class="form-control-input">
+          </div>
+          <div class="form-group-field">
+            <label class="form-field-label">Destination Choice</label>
+            <select id="modal-dest" class="form-control-input">
+              <option value="Golden Triangle & Taj Mahal">Golden Triangle & Taj Mahal</option>
+              <option value="Kerala Backwaters">Kerala Backwaters & Spice Hills</option>
+              <option value="Rajasthan Royal Palaces">Rajasthan Royal Palaces</option>
+              <option value="Kashmir Valleys">Kashmir Valleys</option>
+              <option value="Goa Coastal Escapes">Goa & Coastal Escapes</option>
+              <option value="South India Temples">South India Temple Trails</option>
+              <option value="Multiple Regions">Multiple Regions</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-2col-row">
+          <div class="form-group-field">
+            <label class="form-field-label">Approximate Travel Month</label>
+            <input type="text" id="modal-month" placeholder="e.g. November 2026" class="form-control-input">
+          </div>
+          <div class="form-group-field">
+            <label class="form-field-label">Stay & Comfort Tier</label>
+            <select id="modal-tier" class="form-control-input">
+              <option value="5-Star Luxury & Royal Palaces">5-Star Luxury & Royal Palaces</option>
+              <option value="4-Star Boutique & Heritage">4-Star Boutique & Heritage Stays</option>
+              <option value="Standard Comfortable">Standard Clean & Comfortable</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group-field">
+          <label class="form-field-label">Special Requests or Preferences</label>
+          <textarea id="modal-notes" rows="3" placeholder="Tell us about special requests, dietary needs, or pace preferences..." class="form-control-input"></textarea>
+        </div>
+
+        <button type="submit" class="btn-sheen" style="width: 100%; justify-content: center; padding: 14px; font-size: 0.95rem; margin-top: 8px;">
+          <span>Submit Trip Request</span>
+          <span class="btn-arrow-icon">&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LIVE ITINERARY DRAWER OVERLAY
+       ========================================================================== -->
+  <div id="drawer-itinerary" class="drawer-overlay-blur">
+    <div class="drawer-slide-content">
+      <span class="modal-close-icon" onclick="closeItineraryDrawer()">&times;</span>
+      <div id="drawer-mount-point"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT DYNAMICS (SLIDER, THUMBNAILS, MODALS & DRAWER)
+       ========================================================================== -->
+  <script>
+    // Hero Slide Data
+    const heroSlideData = [
+      {
+        eyebrow: "Golden Triangle & Taj Mahal",
+        title: "INDIA, CURATED AROUND YOU.",
+        desc: "Discover India through hand-crafted private journeys, boutique luxury stays, private chauffeured transport, and 24/7 direct human care led by founder Shailendra.",
+        bg: "assets/images/hero_taj_mahal.jpg"
+      },
+      {
+        eyebrow: "Kerala Palm Lagoons",
+        title: "KERALA, SERENE & UNHURRIED.",
+        desc: "Slow-travel private houseboat cruises through Alleppey backwaters, misty high-altitude tea plantations in Munnar, and Ayurvedic wellness retreats.",
+        bg: "assets/images/hero_kerala.jpg"
+      },
+      {
+        eyebrow: "Rajasthan Royal Heritage",
+        title: "RAJASTHAN, ROYAL & TIMELESS.",
+        desc: "Stay in historic royal palace hotels, explore pink sandstone fortresses in Jaipur and Jodhpur, and experience private desert safaris in Jaisalmer.",
+        bg: "assets/images/hero_rajasthan.jpg"
+      },
+      {
+        eyebrow: "Kashmir Alpine Valleys",
+        title: "KASHMIR, MAJESTIC & TRANQUIL.",
+        desc: "Private luxury shikara stays on Dal Lake, Gulmarg alpine meadow excursions, and pine-scented mountain sanctuaries.",
+        bg: "assets/images/hero_kashmir.jpg"
+      }
+    ];
+
+    let activeSlideIndex = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const thumbCards = document.querySelectorAll('.thumb-card');
+    const titleEl = document.getElementById('hero-title-text');
+    const descEl = document.getElementById('hero-desc-text');
+    const eyebrowEl = document.getElementById('hero-eyebrow');
+    const slideNumEl = document.getElementById('slide-num-current');
+
+    function switchSlide(index) {
+      slides[activeSlideIndex].classList.remove('active');
+      thumbCards[activeSlideIndex].classList.remove('active');
+      
+      activeSlideIndex = index;
+      
+      slides[activeSlideIndex].classList.add('active');
+      thumbCards[activeSlideIndex].classList.add('active');
+      
+      // Update typography with subtle crossfade
+      eyebrowEl.innerHTML = `<span>&#10024;</span> ${heroSlideData[activeSlideIndex].eyebrow}`;
+      titleEl.innerText = heroSlideData[activeSlideIndex].title;
+      descEl.innerText = heroSlideData[activeSlideIndex].desc;
+      slideNumEl.innerText = activeSlideIndex + 1;
+    }
+
+    function nextSlide() {
+      let next = (activeSlideIndex + 1) % heroSlideData.length;
+      switchSlide(next);
+    }
+
+    function prevSlide() {
+      let prev = (activeSlideIndex - 1 + heroSlideData.length) % heroSlideData.length;
+      switchSlide(prev);
+    }
+
+    // Auto rotate every 6.5s
+    let autoSlideTimer = setInterval(nextSlide, 6500);
+
+    // Pause on user thumb click
+    thumbCards.forEach(card => {
+      card.addEventListener('click', () => {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(nextSlide, 7500);
+      });
+    });
+
+    // Hero Search Submit
+    function handleHeroSearchSubmit(e) {
+      e.preventDefault();
+      const dest = document.getElementById('hero-search-dest').value;
+      openTripModal(dest);
+    }
+
+    // Modal Control Functions
+    function openTripModal(preset = '') {
+      const modal = document.getElementById('trip-modal');
+      modal.classList.add('active');
+      if (preset) {
+        const select = document.getElementById('modal-dest');
+        for (let i = 0; i < select.options.length; i++) {
+          if (preset.toLowerCase().includes(select.options[i].value.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        document.getElementById('modal-notes').value = `Interested in customizing: ${preset}`;
+      }
+    }
+
+    function closeTripModal() {
+      document.getElementById('trip-modal').classList.remove('active');
+    }
+
+    document.getElementById('trip-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeTripModal();
+    });
+
+    // Journeys Category Filter
+    function filterJourneysTab(category, btn) {
+      const buttons = document.querySelectorAll('.filter-pill-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.journey-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category.includes(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Itineraries Drawer Data
+    const drawerData = {
+      'golden-triangle': {
+        title: 'Golden Triangle Classic',
+        subtitle: 'Delhi · Agra · Jaipur · Delhi (7 Days / 6 Nights)',
+        image: 'assets/images/dest_golden_triangle.jpg',
+        days: [
+          { day: 'Day 1', title: 'Arrival in Delhi', desc: 'Private transfer to your boutique hotel. Evening walk in historic Connaught Place.' },
+          { day: 'Day 2', title: 'Old & New Delhi Guided Tour', desc: 'Jama Masjid, Rickshaw ride in Chandni Chowk, Humayun Tomb & Qutub Minar.' },
+          { day: 'Day 3', title: 'Delhi to Agra & Sunset Taj View', desc: 'Private AC vehicle drive to Agra. Evening Mehtab Bagh sunset view of Taj Mahal.' },
+          { day: 'Day 4', title: 'Sunrise Taj Mahal to Jaipur', desc: 'Sunrise at Taj Mahal, visit Agra Fort, drive to Jaipur via Fatehpur Sikri.' },
+          { day: 'Day 5', title: 'Jaipur Royal Palaces', desc: 'Amber Fort jeep ride, City Palace museum, Hawa Mahal photo stop & Jantar Mantar.' },
+          { day: 'Day 6', title: 'Jaipur Artisans & Bazaars', desc: 'Block printing workshop, sunset at Nahargarh Fort overlooking Jaipur.' },
+          { day: 'Day 7', title: 'Jaipur to Delhi Departure', desc: 'Private transfer back to Delhi airport for onward departure flight.' }
+        ]
+      },
+      'kerala-backwaters': {
+        title: 'Kerala Backwaters & Tea Hills',
+        subtitle: 'Munnar · Thekkady · Alleppey · Kovalam (8 Days / 7 Nights)',
+        image: 'assets/images/hero_kerala.jpg',
+        days: [
+          { day: 'Day 1', title: 'Arrival in Cochin & Munnar', desc: 'Meet private driver, scenic mountain drive past Cheeyappara waterfalls to Munnar.' },
+          { day: 'Day 2', title: 'Munnar Tea Estates & Wildlife', desc: 'Visit Tea Museum, estate walk, and Nilgiri Tahr wildlife spotting.' },
+          { day: 'Day 3', title: 'Drive to Thekkady Spice Country', desc: 'Drive to Periyar. Guided spice plantation tour and evening Kalaripayattu martial arts show.' },
+          { day: 'Day 4', title: 'Periyar Boat Safari & Houseboat Boarding', desc: 'Morning wildlife lake cruise, drive to Alleppey to board private luxury houseboat.' },
+          { day: 'Day 5', title: 'Alleppey Lagoons to Kovalam', desc: 'Traditional lunch on board, disembark and drive to Kovalam beach resort.' },
+          { day: 'Day 6-7', title: 'Kovalam Beach & Ayurvedic Spa', desc: 'Relaxation on golden beaches, sunset lighthouse views, and custom Ayurvedic massage.' },
+          { day: 'Day 8', title: 'Trivandrum Departure', desc: 'Private transfer to Trivandrum airport for departure.' }
+        ]
+      },
+      'ganges-heritage': {
+        title: 'Golden Triangle & Sacred Ganges',
+        subtitle: 'Delhi · Jaipur · Agra · Varanasi (10 Days / 9 Nights)',
+        image: 'assets/images/hero_taj_mahal.jpg',
+        days: [
+          { day: 'Day 1-6', title: 'Golden Triangle Monuments', desc: 'Complete tour of Delhi monuments, Jaipur Royal Amber Fort, and Agra Taj Mahal.' },
+          { day: 'Day 7', title: 'Flight to Varanasi', desc: 'Morning flight to Varanasi. Evening boat cruise on the Ganges for the Ganga Aarti.' },
+          { day: 'Day 8', title: 'Sunrise Boat Cruise & Sarnath', desc: 'Dawn rowing boat past ancient ghats, visit Sarnath where Lord Buddha gave his first sermon.' },
+          { day: 'Day 9', title: 'Varanasi Weavers & Heritage Walks', desc: 'Explore Banarasi silk weaving quarter and ancient hidden alleyways.' },
+          { day: 'Day 10', title: 'Varanasi to Delhi Flight & Home', desc: 'Return flight to Delhi for international departure connection.' }
+        ]
+      }
+    };
+
+    function openItineraryDrawer(key) {
+      const data = drawerData[key];
+      if (!data) return;
+
+      const overlay = document.getElementById('drawer-itinerary');
+      const mount = document.getElementById('drawer-mount-point');
+
+      let daysHtml = data.days.map(d => `
+        <div style="margin-bottom: 20px; padding-left: 18px; border-left: 2px solid var(--color-champagne);">
+          <strong style="font-size: 1rem; color: #FFFFFF; display: block;">${d.day}: ${d.title}</strong>
+          <span style="font-size: 0.9rem; color: var(--color-text-muted);">${d.desc}</span>
+        </div>
+      `).join('');
+
+      mount.innerHTML = `
+        <div style="margin-top: 10px;">
+          <img src="${data.image}" style="width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 24px; border: 1px solid var(--border-glass);">
+          <span class="pill-eyebrow" style="margin-bottom: 12px;">Sample Itinerary</span>
+          <h2 style="font-size: 2rem; margin-bottom: 6px; color: #fff;">${data.title}</h2>
+          <p style="font-size: 0.95rem; color: var(--color-champagne); font-weight: 700; margin-bottom: 28px;">${data.subtitle}</p>
+
+          <h3 style="font-size: 1.2rem; margin-bottom: 20px; border-bottom: 1px solid var(--border-glass); padding-bottom: 10px; color: #fff;">Day-by-Day Overview</h3>
+          <div>${daysHtml}</div>
+
+          <div style="margin-top: 36px; padding: 24px; background: var(--bg-surface-elevated); border-radius: var(--radius-md); border: 1px solid var(--border-glass);">
+            <strong style="display: block; margin-bottom: 4px; color: #fff;">100% Tailor-Made Itinerary</strong>
+            <span style="font-size: 0.88rem; color: var(--color-text-muted);">Want to add extra nights, upgrade hotel tiers, or alter the route? Founder Shailendra will tailor this around you.</span>
+          </div>
+
+          <button onclick="closeItineraryDrawer(); openTripModal('${data.title}')" class="btn-sheen" style="width: 100%; justify-content: center; margin-top: 28px; padding: 14px;">
+            <span>Customize This Itinerary</span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+      `;
+
+      overlay.classList.add('active');
+    }
+
+    function closeItineraryDrawer() {
+      document.getElementById('drawer-itinerary').classList.remove('active');
+    }
+
+    document.getElementById('drawer-itinerary').addEventListener('click', function(e) {
+      if (e.target === this) closeItineraryDrawer();
+    });
+
+    // Handle Form Submit
+    function handleTripModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-name').value;
+      const dest = document.getElementById('modal-dest').value;
+
+      alert(`Thank you, ${name}! Your request to explore ${dest} has been received. Founder Shailendra will review your details and contact you via WhatsApp/Email within 24 hours.`);
+      closeTripModal();
+    }
+  </script>
+</body>
+</html>
